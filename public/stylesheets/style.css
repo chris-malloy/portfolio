@@ -1,0 +1,70 @@
+img {
+  height: 100%; }
+
+.inlineblock {
+  display: inline-block; }
+
+.center {
+  margin: auto; }
+
+nav .brand-logo {
+  padding-left: 20px; }
+
+.padding {
+  padding: 100px; }
+
+.small {
+  height: 100px; }
+
+#loading {
+  height: 100vh; }
+
+#splash {
+  color: white;
+  background-image: url("../images/profile-picture.jpeg");
+  background-repeat: no-repeat;
+  height: 140vh;
+  padding: 100px;
+  margin-bottom: 0px;
+  text-align: center; }
+
+#projects {
+  background-color: #aaaaaa;
+  padding: 50px;
+  height: 550px; }
+
+#about {
+  height: 300px;
+  background-color: black;
+  color: white; }
+
+.row p {
+  font-size: 30px; }
+
+#footer {
+  background-color: #aaaaaa;
+  height: 750px;
+  padding: 100px;
+  margin-bottom: 0px; }
+
+#footer-bottom {
+  margin-top: 100px;
+  text-align: center; }
+
+.logo {
+  height: 110px; }
+
+.logo img {
+  height: 100%; }
+
+.feature {
+  margin-top: 100px; }
+
+.project {
+  height: 400px; }
+
+.test {
+  border: 2px solid black;
+  height: 400px; }
+
+/*# sourceMappingURL=style.css.map */
