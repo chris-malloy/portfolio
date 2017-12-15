@@ -1,0 +1,17 @@
+#projects {
+    background-color: rgb(170, 170, 170); // margin: 50px;
+    padding: 50px;
+    height: 550px;
+}
+
+@media screen and (max-width: 600px) {
+    #projects {
+        height: 800px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #projects {
+        height: 650px;
+    }
+}
