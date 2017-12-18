@@ -1,6 +1,13 @@
 nav
-	.nav-wrapper.blue.darken-4
-		a(href="/" class="brand-logo") Chris Malloy - Software Engineer
+	.nav-wrapper.blue.darken-4.hide-on-med-and-down
+		a(href="/" class="brand-logo ") Chris Malloy - Software Engineer
+		ul(id="nav-mobile" class="right hide-on-med-and-down")
+			li
+				a(href="/") Projects 
+			li
+				a(href="/about") About
+	.nav-wrapper.blue.darken-4.show-on-medium-and-down.hide-on-med-and-up
+		a(href="/" class="brand-logo ") Chris Malloy - SE
 		ul(id="nav-mobile" class="right hide-on-med-and-down")
 			li
 				a(href="/") Projects 

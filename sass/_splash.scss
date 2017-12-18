@@ -4,7 +4,27 @@
     background-repeat: no-repeat;
     background-size: contain;
     height: 140vh;
-    padding: 40px;
+    // padding: 40px;
+    background-color: rgb(170, 170, 170);
     margin-bottom: 0px;
     text-align: center;
+}
+
+#splash img {
+    width: 70%;
+}
+
+@media screen and (max-width: 1429px){
+    #splash img {
+        width: 60%;
+    }
+    .feature{
+        left: 100px;
+    }
+}
+
+@media screen and (max-width: 1300px){
+    #splash img {
+        width: 50%;
+    }
 }
