@@ -34,6 +34,9 @@
   margin-top: 100px;
   text-align: center; }
 
+#splash {
+  background-size: contain; }
+
 img {
   height: 100%; }
 
