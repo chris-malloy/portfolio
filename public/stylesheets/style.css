@@ -71,7 +71,8 @@ nav .brand-logo {
   font-size: 30px; }
 
 .logo {
-  height: 110px; }
+  height: 110px;
+  padding: 10px !important; }
 
 .logo img {
   height: 100%; }
