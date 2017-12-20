@@ -6,8 +6,27 @@
   height: 140vh;
   background-color: #aaaaaa;
   margin-bottom: 0px;
-  text-align: center; }
+  text-align: center;
+  color: #4fc3f7; }
 
+@media screen and (max-width: 1600px) {
+  #splash {
+    height: 130vh; } }
+@media screen and (max-width: 1500px) {
+  #splash {
+    height: 120vh; } }
+@media screen and (max-width: 1400px) {
+  #splash {
+    height: 110vh; } }
+@media screen and (max-width: 1300px) {
+  #splash {
+    height: 100vh; } }
+@media screen and (max-width: 1200px) {
+  #splash {
+    height: 90vh; } }
+@media screen and (max-width: 992px) {
+  #splash {
+    height: 140vh; } }
 #splash img {
   width: 70%; }
 
@@ -20,6 +39,13 @@
 @media screen and (max-width: 1300px) {
   #splash img {
     width: 50%; } }
+.feature {
+  margin-top: 75px; }
+
+@media screen and (max-width: 992px) {
+  .feature {
+    color: black;
+    margin-top: 700px; } }
 #projects {
   background-color: #aaaaaa;
   padding: 50px;
@@ -31,11 +57,23 @@
 @media screen and (min-width: 1400px) {
   #projects {
     height: 650px; } }
+.project {
+  height: 400px !important; }
+
 #about {
   height: 300px;
   background-color: #383838;
   color: white; }
 
+@media screen and (max-width: 774px) {
+  #about {
+    height: 350px; } }
+@media screen and (max-width: 602px) {
+  #about {
+    height: 400px; } }
+@media screen and (max-width: 532px) {
+  #about {
+    height: 450px; } }
 #footer {
   background-color: #aaaaaa;
   height: 750px;
@@ -76,12 +114,6 @@ nav .brand-logo {
 
 .logo img {
   height: 100%; }
-
-.feature {
-  margin-top: 100px; }
-
-.project {
-  height: 400px; }
 
 .test {
   border: 2px solid black;

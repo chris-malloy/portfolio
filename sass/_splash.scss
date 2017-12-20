@@ -8,6 +8,38 @@
     background-color: rgb(170, 170, 170);
     margin-bottom: 0px;
     text-align: center;
+    color: #4fc3f7;
+}
+
+@media screen and (max-width: 1600px){
+    #splash {
+        height: 130vh;
+    }
+}
+@media screen and (max-width: 1500px){
+    #splash {
+        height: 120vh;
+    }
+}
+@media screen and (max-width: 1400px){
+    #splash {
+        height: 110vh;
+    }
+}
+@media screen and (max-width: 1300px){
+    #splash {
+        height: 100vh;
+    }
+}
+@media screen and (max-width: 1200px){
+    #splash {
+        height: 90vh;
+    }
+}
+@media screen and (max-width: 992px){
+    #splash {
+        height: 140vh;
+    }
 }
 
 #splash img {
@@ -26,5 +58,23 @@
 @media screen and (max-width: 1300px){
     #splash img {
         width: 50%;
+    }
+}
+
+
+.feature {
+    margin-top: 75px;
+}
+
+// @media screen and (max-width: 1040px){
+//     .feature{
+//         margin-top: 80px;
+//     }
+// }
+
+@media screen and (max-width: 992px){
+    .feature{
+        color: black;
+        margin-top: 700px;
     }
 }

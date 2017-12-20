@@ -4,7 +4,18 @@
     color: white;
 }
 
-@media screen,
-print {
-    #about {}
+@media screen and (max-width: 774px){
+    #about {
+        height: 350px;
+    }
+}
+@media screen and (max-width: 602px){
+    #about {
+        height: 400px;
+    }
+}
+@media screen and (max-width: 532px){
+    #about {
+        height: 450px;
+    }
 }
