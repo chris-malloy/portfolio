@@ -23,58 +23,76 @@
 }
 @media screen and (max-width: 1400px){
     #splash {
-        height: 110vh;
+        height: 115vh;
     }
 }
 @media screen and (max-width: 1300px){
     #splash {
+        height: 110vh;
+    }
+}
+// @media screen and (max-width: 1267px){
+//     #splash {
+//         height: 110vh;
+//     }
+// }
+@media screen and (max-width: 1200px){
+    #splash {
         height: 100vh;
     }
 }
-@media screen and (max-width: 1200px){
-    #splash {
-        height: 90vh;
-    }
-}
+
 @media screen and (max-width: 992px){
     #splash {
         height: 140vh;
     }
 }
 
-#splash img {
-    width: 70%;
-}
-
 @media screen and (max-width: 1429px){
-    #splash img {
-        width: 60%;
-    }
     .feature{
-        left: 100px;
+        // left: 80px;
     }
 }
-
-@media screen and (max-width: 1300px){
-    #splash img {
-        width: 50%;
-    }
-}
-
 
 .feature {
-    margin-top: 75px;
+    // margin-top: 75px;
 }
 
-// @media screen and (max-width: 1040px){
-//     .feature{
-//         margin-top: 80px;
-//     }
-// }
 
 @media screen and (max-width: 992px){
     .feature{
         color: black;
-        margin-top: 700px;
+        margin-top: 600px;
+    }
+}
+@media screen and (max-width: 900px){
+    .feature{
+        color: black;
+        margin-top: 550px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .feature{
+        color: black;
+        margin-top: 500px;
+    }
+}
+@media screen and (max-width: 700px){
+    .feature{
+        color: black;
+        margin-top: 350px;
+    }
+}
+@media screen and (max-width: 600px){
+    .feature{
+        color: black;
+        margin-top: 300px;
+    }
+}
+@media screen and (max-width: 500px){
+    .feature{
+        color: black;
+        margin-top: 300px;
     }
 }
