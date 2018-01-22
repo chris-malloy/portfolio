@@ -1,5 +1,7 @@
 const express = require('express');
 const router = express.Router();
+const nodemailer = require('nodemailer');
+const creds = require('../config/config')
 const mainTitle = "Chris Malloy";
 
 /* GET home page. */
@@ -16,5 +18,49 @@ router.get('/temporary', function(req, res, next) {
     })
 });
 
+var transport = {
+    host: 'smtp.gmail.com',
+    auth: {
+        user: creds.USER,
+        pass: creds.PASS,
+    }
+};
+
+// make transporter
+var transporter = nodemailer.createTransport(transport);
+
+// pass verify method against transporter
+transporter.verify((error, success) => {
+    if (error) {
+        console.log(error);
+    } else {
+        console.log('Server is ready to take messages.');
+    };
+});
+
+router.post('/send', (req, res) => {
+    var email = req.body.email;
+    var content = req.body.content;
+    var name = req.body.name;
+    var phone = req.body.phone;
+    var finalMessage = `${content} \n\n phone: ${phone} \n email: ${email}`;
+
+    // nodemailer object
+    var mail = {
+        from: 'Cuff Malloy',
+        to: 'chrismalloymusic@gmail.com',
+        subject: 'test',
+        text: finalMessage
+    };
+
+    transporter.sendMail(mail, (err, data) => {
+        if (err) {
+            console.log(err);
+            res.redirect('/?msg=fail');
+        } else {
+            res.redirect('/?msg=email-sent');
+        }
+    });
+});
 
 module.exports = router;
