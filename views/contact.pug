@@ -1,0 +1,20 @@
+extends layout
+	
+block content
+    include navbar
+    div(id="contact-form-wrapper" class="container center")
+        h4 Message me to talk about code, music, or anything that interests you.
+        .row
+            form.col.s12
+                .row
+                    .input-field.col.s12
+                        //- i(class="material-icons prefix") account_circle
+                        input(id="icon_prefix" type="text" class="validate" name="name")
+                        label(for="icon_prefix") Full Name
+                    .input-field.col.s12
+                        input(id="icon_prefix" type="text" class="validate" name="email")
+                        label(for="icon_prefix") Email
+                    .input-field.col.s12
+                        textarea(id="textarea1" class="materialize-textarea" name="message")
+                        label(for="textarea1") Message
+                    button.btn.blue.darken-4 Submit

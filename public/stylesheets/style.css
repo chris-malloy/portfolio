@@ -107,6 +107,33 @@
 @media screen and (max-width: 442px) {
   #footer {
     height: 1800px; } }
+#contact-form-wrapper {
+  margin-top: 150px;
+  padding: 50px;
+  background-color: #dfdfdf; }
+
+/* label focus color */
+.input-field input:focus + label {
+  color: #0d47a1 !important; }
+
+/* label underline focus color */
+.row .input-field input:focus {
+  border-bottom: 1px solid #0d47a1 !important;
+  box-shadow: 0 1px 0 0 #0d47a1 !important; }
+
+/* textarea focus color */
+.input-field textarea:focus + label {
+  color: #0d47a1 !important; }
+
+/* textarea underline focus color */
+.row .input-field textarea:focus {
+  border-bottom: 1px solid #0d47a1 !important;
+  box-shadow: 0 1px 0 0 #0d47a1 !important; }
+
+input[type=text].valid:not(.browser-default) {
+  border-bottom: 1px solid #0d47a1 !important;
+  box-shadow: 0 1px 0 0 #0d47a1 !important; }
+
 img {
   height: 100%; }
 

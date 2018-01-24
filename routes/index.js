@@ -11,6 +11,13 @@ router.get('/', function(req, res, next) {
     });
 });
 
+/* GET contact page */
+router.get('/contact', function(req,res,next){
+    res.render('contact',{
+        title: mainTitle
+    })
+})
+
 /* GET temporary page */
 router.get('/temporary', function(req, res, next) {
     res.render('temporary', { 
@@ -38,13 +45,13 @@ transporter.verify((error, success) => {
     };
 });
 
+/* POST send page */
 router.post('/send', (req, res) => {
-    var email = req.body.email;
-    var content = req.body.content;
     var name = req.body.name;
-    var phone = req.body.phone;
-    var finalMessage = `${content} \n\n phone: ${phone} \n email: ${email}`;
-
+    var email = req.body.email;
+    var message = req.body.message;
+    var finalMessage = `${message} \n\n name: ${name} \n email: ${email}`;
+    console.log(name,email,message)
     // nodemailer object
     var mail = {
         from: 'Cuff Malloy',
