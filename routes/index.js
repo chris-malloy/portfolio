@@ -54,7 +54,7 @@ router.post('/send', (req, res) => {
     console.log(name,email,message)
     // nodemailer object
     var mail = {
-        from: 'Cuff Malloy',
+        from: 'Chris Malloy',
         to: 'chrismalloymusic@gmail.com',
         subject: 'test',
         text: finalMessage

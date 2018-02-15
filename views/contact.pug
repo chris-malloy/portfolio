@@ -5,12 +5,12 @@ block content
     div(id="contact-form-wrapper" class="container center")
         h4 Message me to talk about code, music, or anything that interests you.
         .row
-            form.col.s12
+            form(className="col s12" method="post", action="/send")
                 .row
                     .input-field.col.s12
                         //- i(class="material-icons prefix") account_circle
                         input(id="icon_prefix" type="text" class="validate" name="name")
-                        label(for="icon_prefix") Full Name
+                        label(s) Full Name
                     .input-field.col.s12
                         input(id="icon_prefix" type="text" class="validate" name="email")
                         label(for="icon_prefix") Email
